@@ -7,3 +7,7 @@ Revision history for Perl extension override.
 1.01  Thu Nov  6 12:22:39 2000
 	- Fixed a documentation bug
 	- Moved to ex:: namespace
+
+1.02  Fri Mar 14 10:00:17 2003
+	- Updated author info
+	- Removed 5.6-isms.

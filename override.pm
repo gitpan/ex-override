@@ -1,13 +1,13 @@
 package ex::override;
-
-require 5.005_62;
+# $Id: override.pm,v 1.1 2003/03/14 14:58:53 cwest Exp $
 use strict;
 use warnings;
 use Carp;
 
-our $VERSION = '1.01';
+use vars qw[$VERSION @ISA];
+$VERSION = (qw$Revision: 1.1 $)[1];
 
-our @ISA = 'ex::override::functions';
+@ISA = qw[ex::override::functions];
 
 sub import {
   my $self = shift;
@@ -167,12 +167,12 @@ to know them.
 
 =head1 AUTHOR
 
-Casey R. Tweten, crt@kiski.net
+Casey West, <F<casey@geeknest.com>>
 
 
 =head1 COPYRIGHT
 
-Copyright (c) 2000 Casey R. Tweten <crt@kiski.net>.  All
+Copyright (c) 2000 Casey West <casey@geeknest.com>.  All
 rights reserved.  This program is free software; you can
 redistribute it and/or modify it under the same terms as
 Perl itself.
